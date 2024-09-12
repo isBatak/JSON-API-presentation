@@ -3,7 +3,7 @@ marp: false
 theme: default
 ---
 
-# JSON:API
+![JSON:API](https://raw.githubusercontent.com/patrickcate/nuxt-jsonapi/main/playground/public/nuxt-jsonapi-logo.svg)
 
 ---
 
