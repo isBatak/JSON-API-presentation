@@ -343,12 +343,12 @@ Example `vehicles` relationship with different attributes:
 
 ## Links in Relationships
 
-- **self**
+- **self**: `/articles/1/relationships/author`
   - A link to the relationship itself.
   - Used for updating or deleting the relationship data on a parent resource.
   - Returns the linkage data for the relationship. 
 
-- **related**
+- **related**: `/articles/1/author`
   - A link to the related resource(s).
   - Used for retrieving the related resource(s) complete representation.
 
@@ -447,11 +447,10 @@ GET /articles/1?include=author,comments
 
 ### Sorting in JSON:API
 
-- Standardized approach for sorting resources.
 - Commonly used query parameter: `sort`.
 - Sort resources based on one or more fields.
-- Sort order can be ascending or descending.
-- Multiple fields can be separated by commas.
+  - **Multiple fields** can be separated by commas `,`.
+- Sort order can be **ascending** or **descending** by adding a `-` prefix.
 
 ---
 
@@ -509,7 +508,6 @@ GET /articles?filter[author.status]=active
 ---
 
 ### Pagination in JSON:API
-- Standardized approach for paginating large sets of data.
 - Commonly used query parameters:
   - `page[number]`: Page number.
   - `page[size]`: Number of resources per page.
@@ -678,9 +676,11 @@ Accept: application/vnd.api+json;ext="https://jsonapi.org/ext/atomic"
 ---
 
 ### Cursor Pagination Profile:
-```
+
+```bash
 GET /example-data?page[after]=abcde&page[size]=2
 ```
+
 ```json
 {
   "links": {
@@ -698,7 +698,8 @@ GET /example-data?page[after]=abcde&page[size]=2
 
 ---
 
-### Timestaps Profile:
+### Timestamps Profile:
+
 ```json
 {
   "data": {
