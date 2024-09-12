@@ -719,9 +719,16 @@ GET /example-data?page[after]=abcde&page[size]=2
 ---
 
 ### Custom Extensions
+
 - **Bulk Create**: [JSON:API Bulk Create Extension](https://github.com/jelhan/json-api-bulk-create-extension#jsonapi-bulk-create-extension)
-- **Filters**: TODO: Add links.
+  - Allows creating multiple resources in a single request.
+- **Filters**: [JSON API Fancy Filters](https://gist.github.com/e0ipso/efcc4e96ca2aed58e32948e4f70c2460)
+  - Allows filtering resources based on custom criteria.
+  - [Filter by relationship](https://gist.github.com/e0ipso/1acbced683908ff631e3)
+  - [Additional info](https://www.drupal.org/docs/core-modules-and-themes/core-modules/jsonapi-module/filtering)
+  - A simpler example [here](https://www.graphiti.dev/quickstart#querying)
 - **Relative Fields**: [Relative Fields Extension](https://github.com/ThorstenSuckow/relfield)
+  - Allows inclusion and exclusion of fields
 
 ---
 

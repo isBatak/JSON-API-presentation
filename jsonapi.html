@@ -654,7 +654,7 @@ Accept<span class="hljs-punctuation">:</span> application/vnd.api+json;ext=<span
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="55" data-theme="default" lang="hr-HR" style="--theme:default;">
 <h3 id="cursor-pagination-profile">Cursor Pagination Profile:</h3>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code>GET /example-data?page[after]=abcde&amp;page[size]=2
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash">GET /example-data?page[after]=abcde&amp;page[size]=2
 </code></pre>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-json"><span class="hljs-punctuation">{</span>
   <span class="hljs-attr">&quot;links&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
@@ -690,9 +690,24 @@ Accept<span class="hljs-punctuation">:</span> application/vnd.api+json;ext=<span
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="57" data-theme="default" lang="hr-HR" style="--theme:default;">
 <h3 id="custom-extensions">Custom Extensions</h3>
 <ul>
-<li><strong>Bulk Create</strong>: <a href="https://github.com/jelhan/json-api-bulk-create-extension#jsonapi-bulk-create-extension">JSON:API Bulk Create Extension</a></li>
-<li><strong>Filters</strong>: TODO: Add links.</li>
-<li><strong>Relative Fields</strong>: <a href="https://github.com/ThorstenSuckow/relfield">Relative Fields Extension</a></li>
+<li><strong>Bulk Create</strong>: <a href="https://github.com/jelhan/json-api-bulk-create-extension#jsonapi-bulk-create-extension">JSON:API Bulk Create Extension</a>
+<ul>
+<li>Allows creating multiple resources in a single request.</li>
+</ul>
+</li>
+<li><strong>Filters</strong>: <a href="https://gist.github.com/e0ipso/efcc4e96ca2aed58e32948e4f70c2460">JSON API Fancy Filters</a>
+<ul>
+<li>Allows filtering resources based on custom criteria.</li>
+<li><a href="https://gist.github.com/e0ipso/1acbced683908ff631e3">Filter by relationship</a></li>
+<li><a href="https://www.drupal.org/docs/core-modules-and-themes/core-modules/jsonapi-module/filtering">Additional info</a></li>
+<li>A simpler example <a href="https://www.graphiti.dev/quickstart#querying">here</a></li>
+</ul>
+</li>
+<li><strong>Relative Fields</strong>: <a href="https://github.com/ThorstenSuckow/relfield">Relative Fields Extension</a>
+<ul>
+<li>Allows inclusion and exclusion of fields</li>
+</ul>
+</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="58" data-theme="default" lang="hr-HR" style="--theme:default;">
