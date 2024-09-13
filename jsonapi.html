@@ -13,30 +13,11 @@
 <p><img src="https://raw.githubusercontent.com/patrickcate/nuxt-jsonapi/main/playground/public/nuxt-jsonapi-logo.svg" alt="JSON:API" /></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-theme="default" lang="hr-HR" style="--theme:default;">
-<h2 id="what-is-rest">What is REST?</h2>
-<h3 id="representational-state-transfer">Representational State Transfer</h3>
-<blockquote>
-<p>It is not a standard, rather a style describing the act of transferring a state of something by its representation.</p>
-</blockquote>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-theme="default" lang="hr-HR" style="--theme:default;">
-<p><img src="https://www.graphiti.dev/assets/img/rest1.gif" alt="REST" /></p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-theme="default" lang="hr-HR" style="--theme:default;">
-<h2 id="what-is-hateoas">What is HATEOAS?</h2>
-<p><strong>Hypermedia As The Engine Of Application State</strong></p>
-<blockquote>
-<p>A constraint of REST that requires a server response to include hypermedia links to related resources.</p>
-</blockquote>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-theme="default" lang="hr-HR" style="--theme:default;">
-<p><img src="https://www.graphiti.dev/assets/img/rest2.gif" alt="HATEOAS" /></p>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-theme="default" lang="hr-HR" style="--theme:default;">
 <h2 id="jsonapi">JSON:API</h2>
 <blockquote>
 <p>BAD naming!</p>
 </blockquote>
+<p>Homepage: <a href="https://jsonapi.org/">jsonapi.org</a></p>
 <h3 id="its-a-specification">It's a Specification!</h3>
 <ul>
 <li>A standardized specification</li>
@@ -44,7 +25,26 @@
 <li>Minimize amount of data transmitted between clients and servers.</li>
 <li>Follows <strong>Internet Engineering Task Force</strong> (IETF) standards.</li>
 </ul>
-<p>Homepage: <a href="https://jsonapi.org/">jsonapi.org</a></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-theme="default" lang="hr-HR" style="--theme:default;">
+<h2 id="what-is-rest">What is REST?</h2>
+<h3 id="representational-state-transfer">Representational State Transfer</h3>
+<blockquote>
+<p>It is not a standard, rather a style describing the act of transferring a state of something by its representation.</p>
+</blockquote>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-theme="default" lang="hr-HR" style="--theme:default;">
+<p><img src="https://www.graphiti.dev/assets/img/rest1.gif" alt="REST" /></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-theme="default" lang="hr-HR" style="--theme:default;">
+<h2 id="what-is-hateoas">What is HATEOAS?</h2>
+<p><strong>Hypermedia As The Engine Of Application State</strong></p>
+<blockquote>
+<p>A constraint of REST that requires a server response to include hypermedia links to related resources.</p>
+</blockquote>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-theme="default" lang="hr-HR" style="--theme:default;">
+<p><img src="https://www.graphiti.dev/assets/img/rest2.gif" alt="HATEOAS" /></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-theme="default" lang="hr-HR" style="--theme:default;">
 <h2 id="what-problems-does-jsonapi-solve">What problems does JSON:API solve?</h2>
@@ -513,9 +513,9 @@
     <span class="hljs-attr">&quot;last&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;/articles?page[number]=10&amp;page[size]=10&quot;</span>
   <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">&quot;meta&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-    <span class="hljs-attr">&quot;total-pages&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">10</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">&quot;total-count&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">100</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">&quot;page-size&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">10</span>
+    <span class="hljs-attr">&quot;totalPages&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">10</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">&quot;totalCount&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">100</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-attr">&quot;pageSize&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">10</span>
   <span class="hljs-punctuation">}</span>
 <span class="hljs-punctuation">}</span>
 </code></pre>
@@ -604,7 +604,7 @@
         <span class="hljs-attr">&quot;header&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Authorization&quot;</span><span class="hljs-punctuation">,</span>
       <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
       <span class="hljs-attr">&quot;meta&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-        <span class="hljs-attr">&quot;request-id&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;abc123&quot;</span>
+        <span class="hljs-attr">&quot;requestId&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;abc123&quot;</span>
       <span class="hljs-punctuation">}</span>
     <span class="hljs-punctuation">}</span>
   <span class="hljs-punctuation">]</span>
@@ -619,7 +619,7 @@
 <ul>
 <li><a href=""><strong>Extensions</strong></a>: Custom modifications or additions to the standard JSON:API behavior.
 <ul>
-<li><strong>MUST</strong> have a namespace separated bg :, e.g. <code>ext:bulk-create</code>.</li>
+<li><strong>MUST</strong> have a namespace separated bg :, e.g. <code>bulk:data</code>.</li>
 <li><strong>Atomic Operations</strong>: Batch operations like multiple create, update, delete in a single request.</li>
 </ul>
 </li>

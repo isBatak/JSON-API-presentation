@@ -7,6 +7,22 @@ theme: default
 
 ---
 
+## JSON:API
+
+> BAD naming!
+
+Homepage: [jsonapi.org](https://jsonapi.org/)
+
+### It's a Specification!
+
+- A standardized specification
+- Minimize the number of requests
+- Minimize amount of data transmitted between clients and servers.
+- Follows **Internet Engineering Task Force** (IETF) standards.
+
+
+---
+
 ## What is REST?
 
 ### Representational State Transfer
@@ -29,20 +45,6 @@ theme: default
 ---
 
 ![HATEOAS](https://www.graphiti.dev/assets/img/rest2.gif)
-
----
-
-## JSON:API
-
-> BAD naming!
-
-### It's a Specification!
-- A standardized specification
-- Minimize the number of requests
-- Minimize amount of data transmitted between clients and servers.
-- Follows **Internet Engineering Task Force** (IETF) standards.
-
-Homepage: [jsonapi.org](https://jsonapi.org/)
 
 ---
 
@@ -541,9 +543,9 @@ GET /articles?page[number]=2&page[size]=10
     "last": "/articles?page[number]=10&page[size]=10"
   },
   "meta": {
-    "total-pages": 10,
-    "total-count": 100,
-    "page-size": 10
+    "totalPages": 10,
+    "totalCount": 100,
+    "pageSize": 10
   }
 }
 ```
@@ -629,7 +631,7 @@ Example:
         "header": "Authorization",
       },
       "meta": {
-        "request-id": "abc123"
+        "requestId": "abc123"
       }
     }
   ]
@@ -644,7 +646,7 @@ Example:
 
 ### JSON:API Extensions vs. Profiles
 - [**Extensions**](): Custom modifications or additions to the standard JSON:API behavior.
-  - **MUST** have a namespace separated bg :, e.g. `ext:bulk-create`.
+  - **MUST** have a namespace separated bg :, e.g. `bulk:data`.
   - **Atomic Operations**: Batch operations like multiple create, update, delete in a single request.
 - [**Profiles**](https://jsonapi.org/profiles/ethanresnick/cursor-pagination/): Define optional, non-breaking additions to the base specification. 
   - **Cursor Pagination**: Pagination method using cursors rather than offset-based pagination.
